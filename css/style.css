@@ -347,4 +347,51 @@ footer {
   footer a:hover {
     color: var(--main-color);
   }
+
+  /****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media screen and (max-width: 1024px) {
+    .filter-search .filter h3 {
+      display: block;
+      margin-bottom: 20px;
+    }
+  
+    .lodgings-and-populaires {
+      flex-direction: column;
+    }
+  
+    #lodgings {
+      width: 100%;
+    }
+  
+    .popular {
+      width: 100%;
+      margin-top: 50px;
+    }
+  
+    .popular-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .popular-cards a {
+      width: 30%;
+    }
+  
+    .popular-cards .card-title {
+      font-size: 14px;
+    }
+  
+    .popular-cards .card-subtitle {
+      font-size: 13px;
+    }
+  
+    .activities-cards img {
+      width: 100%;
+      height: 225px;
+      border-radius: 20px 20px 0 0;
+    }
+  }
+  
   
