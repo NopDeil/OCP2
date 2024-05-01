@@ -70,3 +70,51 @@ header {
     padding-top: 10px;
   }
   
+  
+/****** Search-form ***********/
+
+form .fa-location-dot {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: var(--main-bg-color);
+    font-size: 20px;
+    width: 25px;
+    height: 26px;
+    margin-right: -5px;
+    padding: 10px;
+    border-radius: 15px 0 0 15px;
+  }
+  
+  form input {
+    padding: 10px;
+    width: 210px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid var(--main-bg-color);
+    font-size: 20px;
+  }
+  
+  form button {
+    background-color: var(--main-color);
+    border: 1px solid transparent;
+    color: var(--filter-bg-color);
+    border-radius: 0 15px 15px 0;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    right: 10px;
+    bottom: 2px;
+    cursor: pointer;
+  }
+  
+  form button .fa-magnifying-glass {
+    display: none;
+  }
+  
+  .filter-search .search p {
+    margin-top: 10px;
+  }
+  
