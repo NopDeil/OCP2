@@ -1,0 +1,72 @@
+* {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  :root {
+    --main-color: #0065fc;
+    --main-bg-color: #f2f2f2;
+    --filter-bg-color: #deebff;
+  }
+  
+  .fa-solid {
+    color: var(--main-color);
+    margin-right: 5px;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  /****** Header ***********/
+
+header {
+    width: 100%;
+    height: 100px;
+  }
+  
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    width: 40%;
+    align-items: center;
+  }
+  
+  header nav img {
+    width: 90px;
+    height: 30px;
+  }
+  
+  header nav ul li {
+    width: 50%;
+    text-align: center;
+  }
+  
+  header nav ul li:hover {
+    color: var(--filter-bg-color);
+    border-top: 2px var(--main-color) solid;
+    padding-top: 10px;
+  }
+  
