@@ -327,3 +327,24 @@ form .fa-location-dot {
     opacity: 0.6;
   }
   
+/****** Footer ***********/
+
+footer {
+    width: 100%;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer div h2 {
+    margin: 20px 0 0 40px;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer a:hover {
+    color: var(--main-color);
+  }
+  
