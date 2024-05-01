@@ -118,3 +118,47 @@ form .fa-location-dot {
     margin-top: 10px;
   }
   
+/****** Filter ***********/
+
+.filter-search .filter {
+    margin-top: 30px;
+  }
+  
+  .filter-search .filter h3 {
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .filter-search .filter button {
+    padding: 10px 20px;
+    margin: 0 2px;
+    border-radius: 20px;
+    border: 2px var(--main-bg-color) solid;
+    font-weight: bold;
+    background-color: white;
+  }
+  
+  .filter-search .filter button:hover {
+    background-color: var(--filter-bg-color);
+    cursor: pointer;
+  }
+  
+  .filter-search p {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+  }
+  
+  .filter-search p span {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .filter-search p span i {
+    margin: auto;
+    font-size: x-small;
+  }
