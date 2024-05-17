@@ -10,19 +10,23 @@
 
 .fa-solid {
   color: var(--main-color);
-  margin-right: 5px;
+  margin-right: 2px;
 }
 
 body {
   display: flex;
   justify-content: center;
+  margin: 0;
+}
+
+main {
+  margin-top: 5%;
 }
 
 .main-container {
   width: 100%;
   max-width: 1440px;
   padding: 0 40px;
-  box-sizing: border-box;
 }
 
 ul {
@@ -35,18 +39,20 @@ a {
 }
 .section-title {
   font-size: 22px;
+  margin: 0;
 }
 
 .card {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
-  margin-bottom: 25px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .cards-activities {
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
   border-radius: 20px;
   width: 100%;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -76,7 +82,6 @@ a {
 
 header {
   width: 100%;
-  height: 100px;
 }
 
 header nav {
@@ -84,32 +89,39 @@ header nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+}
+
+header nav img {
+  width: 70px;
+  margin-top: 30px;
 }
 
 header nav ul {
   display: flex;
-  width: 40%;
-  align-items: center;
-}
-
-header nav img {
-  width: 90px;
-  height: 30px;
+  width: 22%;
+  padding: 0;
 }
 
 header nav ul li {
   width: 50%;
-  text-align: center;
+  text-align: right;
 }
 
-header nav ul li:hover {
-  color: var(--filter-bg-color);
-  border-top: 2px var(--main-color) solid;
-  padding-top: 10px;
+header nav ul li a:hover {
+  color: var(--main-color);
+  border-top: 3px var(--main-color) solid;
+  padding-top: 14px;
 }
 
 /****** Search-form ***********/
+
+.filter-search .search h1 {
+  margin-bottom: 0;
+}
+
+.filter-search .search p {
+  margin: 10px 0 30px 0;
+}
 
 form .fa-location-dot {
   display: inline-flex;
@@ -118,16 +130,16 @@ form .fa-location-dot {
   color: black;
   background-color: var(--main-bg-color);
   font-size: 20px;
-  width: 25px;
+  width: 30px;
   height: 26px;
-  margin-right: -5px;
   padding: 10px;
   border-radius: 15px 0 0 15px;
 }
 
 form input {
-  padding: 10px;
+  padding: 10px 0 10px 0;
   width: 210px;
+  margin-left: -5px;
   text-align: center;
   font-weight: bold;
   border: 1px solid var(--main-bg-color);
@@ -139,8 +151,9 @@ form button {
   border: 1px solid transparent;
   color: var(--filter-bg-color);
   border-radius: 0 15px 15px 0;
-  padding: 13px;
-  font-size: 15px;
+  padding: 11px 10px 13px 13px;
+  font-size: 17px;
+  width: auto;
   font-weight: bold;
   position: relative;
   right: 10px;
@@ -152,28 +165,36 @@ form button .fa-magnifying-glass {
   display: none;
 }
 
-.filter-search .search p {
-  margin-top: 10px;
-}
-
 /****** Filter ***********/
 
 .filter-search .filter {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
-.filter-search .filter h3 {
+.filter-search .filter h2 {
   display: inline-block;
   padding-right: 5px;
+  font-size: larger;
 }
 
 .filter-search .filter button {
-  padding: 10px 20px;
-  margin: 0 2px;
+  padding: 10px 0;
+  width: 148px;
+  margin: 0px 5px;
   border-radius: 20px;
   border: 2px var(--main-bg-color) solid;
   font-weight: bold;
+  font-size: 15px;
   background-color: white;
+}
+
+.filter-search .filter #button-family {
+  width: 110px;
+}
+
+.filter i {
+  font-size: larger;
+  margin-right: 10px;
 }
 
 .filter-search .filter button:hover {
@@ -181,13 +202,13 @@ form button .fa-magnifying-glass {
   cursor: pointer;
 }
 
-.filter-search p {
+.filter-search .filter p {
   display: flex;
   align-items: center;
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
-.filter-search p span {
+.filter-search .filter p span {
   height: 20px;
   width: 20px;
   display: flex;
@@ -196,7 +217,7 @@ form button .fa-magnifying-glass {
   margin-right: 10px;
 }
 
-.filter-search p span i {
+.filter-search .filter p span i {
   margin: auto;
   font-size: x-small;
 }
@@ -211,13 +232,18 @@ form button .fa-magnifying-glass {
 .lodgings-and-popular section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
-  padding: 25px;
+  padding: 30px 20px 0px 20px;
   box-sizing: border-box;
 }
+
 /****** lodgings ***********/
 
 #lodgings {
   width: 66%;
+}
+
+#lodgings h2 {
+  margin: 0 0 20px;
 }
 
 .lodgings-cards {
@@ -226,15 +252,10 @@ form button .fa-magnifying-glass {
   justify-content: space-between;
 }
 
-#lodgings h2 {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-}
-
 .lodgings-cards a {
   display: flex;
-  width: 31%;
-  margin-bottom: 10px;
+  width: 32%;
+  margin-bottom: 20px;
 }
 
 .lodgings-cards .card {
@@ -245,8 +266,8 @@ form button .fa-magnifying-glass {
 
 .lodgings-cards img {
   width: 100%;
-  height: 136px;
-  border-radius: 20px 20px 0 0;
+  height: 105px;
+  border-radius: 15px 15px 0 0;
 }
 .lodgings-cards .card-content {
   width: 100%;
@@ -257,16 +278,23 @@ form button .fa-magnifying-glass {
   box-sizing: border-box;
 }
 
+.lodgings-cards .card-title {
+  margin: 10px 0 5px 0;
+}
+
 .lodgings-cards .card-subtitle {
   margin: 0;
+  font-size: 14px;
 }
 
 .lodgings-cards .card-rating {
-  margin-top: 5px;
+  margin: 12px 0;
+  display: flex;
+  justify-content: start;
 }
 
 .afficher {
-  padding-bottom: 10px;
+  font-size: medium;
 }
 
 .lodgings-cards a:hover {
@@ -274,15 +302,21 @@ form button .fa-magnifying-glass {
 }
 
 /****** popular ***********/
+
 .popular {
-  width: 31%;
+  width: 32%;
 }
 
 .popular-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
+}
+
+.popular-cards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .popular-cards .card {
@@ -291,8 +325,9 @@ form button .fa-magnifying-glass {
 
 .popular-cards img {
   width: 33%;
-  height: 136px;
-  border-radius: 20px 0 0 20px;
+  height: 120px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .popular-cards .card-content {
@@ -305,6 +340,7 @@ form button .fa-magnifying-glass {
 }
 
 .popular-cards .card-title {
+  margin-top: 10px;
   margin-bottom: 4px;
 }
 
@@ -317,7 +353,8 @@ form button .fa-magnifying-glass {
 }
 
 .popular-cards a {
-  display: flow-root;
+  width: 100%;
+  margin-bottom: 20px;
   height: 40%;
 }
 
@@ -328,11 +365,12 @@ form button .fa-magnifying-glass {
 
 #activities {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 #activities h2 {
-  margin: 60px 0 20px 0;
+  margin: 60px auto 20px;
+  width: 97%;
 }
 
 .activities-cards {
@@ -348,7 +386,7 @@ form button .fa-magnifying-glass {
 
 .activities-cards img {
   width: 100%;
-  height: 350px;
+  height: 295px;
   border-radius: 20px 20px 0 0;
 }
 
@@ -358,7 +396,8 @@ form button .fa-magnifying-glass {
 }
 
 .activities-cards .cards-activities .card-title-activities {
-  margin: 10px 0 20px 20px;
+  margin-left: 20px;
+  font-size: 14px;
 }
 
 .activities-cards a:hover {
@@ -371,14 +410,22 @@ footer {
   width: 100%;
   background-color: var(--main-bg-color);
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer div {
+  width: 33%;
 }
 
 footer div h2 {
-  margin: 20px 0 0 40px;
+  margin: 20px 0 0 20px;
+  font-size: large;
 }
 
-footer ul li {
+footer div ul {
+  padding-left: 20px;
+}
+footer div ul li {
   margin-bottom: 10px;
 }
 
@@ -389,9 +436,12 @@ footer a:hover {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {
-  .filter-search .filter h3 {
+  header nav ul {
+    width: 30%;
+  }
+
+  .filter-search .filter h2 {
     display: block;
-    margin-bottom: 20px;
   }
 
   .lodgings-and-popular {
@@ -454,13 +504,23 @@ footer a:hover {
     padding: 0;
   }
 
+  header nav ul li {
+    text-align: center;
+    border-bottom: 2px var(--filter-bg-color) solid;
+    padding-bottom: 15px;
+  }
+
   header nav img {
-    margin-top: 30px;
+    margin: 30px 0 10px;
   }
 
   header nav ul li:hover {
-    border: none;
     border-bottom: 2px var(--main-color) solid;
+    padding-bottom: 10px;
+  }
+
+  header nav ul li a:hover {
+    border-top: none;
   }
 
   /****** Search-form ***********/
@@ -472,19 +532,22 @@ footer a:hover {
   }
 
   form .fa-location-dot {
-    width: 5%;
+    padding: 12px;
   }
 
   form input {
-    padding: 0;
-    width: 75%;
+    width: 210px;
+    padding: 10px 12px 10px 10px;
+    text-align: start;
   }
 
   form button {
-    padding: 0;
-    font-size: 15px;
-    width: 10%;
+    width: auto;
+    padding: 15px;
     position: unset;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px -1px grey;
+    margin-left: -37px;
   }
 
   form button i {
@@ -496,26 +559,40 @@ footer a:hover {
   }
 
   .filter-search {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   /****** filter ***********/
 
-  .filter-search .filter h3 {
-    padding-right: 5px;
+  .filter-search .filter h2 {
+    margin-top: 30px;
+    font-size: medium;
+  }
+
+  .filter-search .filter #button-family {
+    width: 47%;
+    padding-right: 40px;
   }
 
   .filter-search .filter button {
-    width: 43%;
-    margin: 10px 10px;
-    padding: 15px 15px;
-    font-size: small;
+    width: 47%;
+    margin: 10px 5px 10px 0;
     border-radius: 20px;
+    font-size: smaller;
+    padding-right: 15px;
     border: 2px var(--main-bg-color) solid;
     font-weight: bold;
     background-color: white;
   }
 
+  .filter i {
+    font-size: larger;
+    margin: 0 10px 0;
+  }
+
+  .filter-search .filter p span {
+    width: 20px;
+  }
   /****** Lodgings and popular ***********/
 
   .lodgings-and-popular {
@@ -524,6 +601,7 @@ footer a:hover {
 
   .lodgings-and-popular section {
     border-radius: 0;
+    margin: 5px 0 0 0;
   }
 
   /****** Lodgings ***********/
@@ -532,6 +610,9 @@ footer a:hover {
     background-color: white;
   }
 
+  #lodgings h2 {
+    font-size: larger;
+  }
   .lodgings-cards {
     flex-direction: column;
   }
@@ -554,6 +635,10 @@ footer a:hover {
     width: 100%;
   }
 
+  .section-title {
+    font-size: larger;
+  }
+
   /****** Activities ***********/
 
   #activities {
@@ -561,7 +646,8 @@ footer a:hover {
   }
 
   #activities h2 {
-    margin: 30px 0 20px 30px;
+    margin: 60px 0 20px 27px;
+    font-size: larger;
   }
 
   .activities-cards {
@@ -575,7 +661,7 @@ footer a:hover {
   }
 
   .activities-cards img {
-    height: 250px;
+    height: 150px;
   }
 
   /****** Footer ***********/
@@ -583,5 +669,13 @@ footer a:hover {
   footer {
     width: 100%;
     flex-direction: column;
+  }
+
+  footer div {
+    width: 100%;
+  }
+
+  footer div h2 {
+    font-size: medium;
   }
 }
