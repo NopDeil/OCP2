@@ -532,22 +532,24 @@ footer a:hover {
   }
 
   form .fa-location-dot {
-    padding: 12px;
+    padding: 12px 8px;
+    width: 25px;
+    height: 100%;
   }
 
   form input {
-    width: 210px;
-    padding: 10px 12px 10px 10px;
-    text-align: start;
+    width: calc(94% - 75px);
+        padding: 10px 0 10px 15px;
+        text-align: start;
   }
 
   form button {
-    width: auto;
+    width: 50px;
     padding: 15px;
     position: unset;
     border-radius: 15px;
     box-shadow: 0px 5px 5px -1px grey;
-    margin-left: -37px;
+    margin-left: -13px;
   }
 
   form button i {
@@ -560,6 +562,8 @@ footer a:hover {
 
   .filter-search {
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
   }
 
   /****** filter ***********/
